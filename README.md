@@ -27,5 +27,14 @@ pytest -q
 6) Next you are going to set up the GitHub Actions by:
 mkdir -p .github/workflows
 nano .github/workflows/ci.yml
+(then you are going to write out your workflow code into that and save it)
+
+7) You are going to do the push the GitHub by:
+git add .github/workflows/ci.yml requirements.txt tests/test_imports.py 
+git
+git commit -m "Milestone 0"
+git push origin main
+
+8) Next you are going to GitHub and go to the repo, actions tab and it should a green mark that means it is good and working. You can add the CI badge by going to the actions tab, workflow, click "create status badge"
 
 
