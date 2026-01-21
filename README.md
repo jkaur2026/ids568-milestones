@@ -35,6 +35,10 @@ git
 git commit -m "Milestone 0"
 git push origin main
 
-8) Next you are going to GitHub and go to the repo, actions tab and it should a green mark that means it is good and working. You can add the CI badge by going to the actions tab, workflow, click "create status badge"
+8) Next you are going to GitHub and go to the repo, actions tab and it should a green mark that means it is good and working. You can add the CI badge by going to the actions tab then it should show workflow, click "create status badge" which then you can copy that and then paste it in to your README.md (then go back to the main page and it should show a green mark which is the badge and you are good to go. 
 
+Written Document Portion
+1) Environment reproducibility is something that is very importantfor the ML lifecycle reliability. That is because of the reason that its important that there is the the same results across everything otherwise it can cause problems in the code and the modesl so to stop this from happening it would be done by making a virtual environemnt and pinning dependencies as shown in the instructions on the requirements.txt.
+2) The key reproducibility principles that were applied in my setup were making sure there is virtual environment and making there was a smoketest that was done to make sure it working well and I had used pytest for that. I also had pinned dependencies with the exact versions. I also then did GitHub actions to run everything and validating with the badge and making sure its green.
+3) Strong environment helps make sure there is good deployment success because it needs to make everything is going smooth and such 
 
