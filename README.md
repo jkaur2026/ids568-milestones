@@ -3,22 +3,29 @@
 
 Setting up from scratch
 
-You are going to clone the repo by:
-1) git clone https://github.com/jkaur2026/ids568-milestones.git
+1) You are going to clone the repo by:
+git clone https://github.com/jkaur2026/ids568-milestones.git
 cd ids568-milestones
 
-You are going to initialize the virtual environment by:
-2) -m venv venv 
+2) You are going to initialize the virtual environment by:
+-m venv venv 
 source venv/bin/activate
 
-You are going to install the dependencies by:
-3) pip install --upgrade pip then you are going to do pip install numpy pandas scikit-learn pytest and then you are going to do pip freeze > requirements.txt. 
+3) You are going to install the dependencies by:
+pip install --upgrade pip then you are going to do pip install numpy pandas scikit-learn pytest and then you are going to do pip freeze > requirements.txt. 
 
-You are going to make the test and then you are going to run the smoke test by:
+4) You are going to make the test and then you are going to run the smoke test by:
 mkdir tests nano tests/test_imports.py
 def test_imports():
 import numpy
 import pandas
 import sklearn
+
+5) In order to run the test you are going to then do (it should show pass):
+pytest -q
+
+6) Next you are going to set up the GitHub Actions by:
+mkdir -p .github/workflows
+nano .github/workflows/ci.yml
 
 
